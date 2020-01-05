@@ -5,13 +5,16 @@ import "./App.css";
 const App: React.FC = () => {
   return (
     <div className="App">
-      <section>
+      <section className="counter-section">
         <Counter>
           {({ count, setCount }) => (
-            <div>
-              {count}
+            <div className="counter-container">
+              <section className="counter-number">{count}</section>
               <button onClick={() => setCount(count + 1)}>Plus Button</button>
               <button onClick={() => setCount(count - 1)}>Minus Button</button>
+              <button onClick={() => setCount((count = 0))}>
+                Reset Button
+              </button>
             </div>
           )}
         </Counter>
