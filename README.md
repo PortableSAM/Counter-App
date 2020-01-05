@@ -10,6 +10,7 @@
 > Development Platform
 
 - Firebase Hosting
+- URL : https://counter-app-d0e29.web.app/
 
 > Reference Videos
 
